@@ -203,4 +203,7 @@
             grid-template-columns: 1fr;
         }
     }
-    
+    .li-integrantes{
+      background-color: #191a36;
+      border-radius: 10px;
+    }
