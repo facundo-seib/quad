@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&family=Tilt+Neon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&family=Tilt+Neon&display=swap");
+
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    }
+    html, body {
+        scroll-behavior: smooth;
+        height: 100%;
+        margin: 0
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    .navBar a {
+      color: #fdfdfd;
+      padding: 8px 0;
+      text-decoration: none;
+    }
+    
+    .navBar h1 {
+      color: #fff;
+      font-size: 20px;
+      margin: 0;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    
+    .navBar header {
+      background: #222;
+      padding: 10px 0;
+      width: 100%;
+    }
+    
+    .navBar li {
+      color: #fff;
+      list-style: none;
+      padding: 12px;
+    }
+    
+    .navBar li:hover {
+      background: rgba(0, 0, 0, .25);
+    }
+    
+    .navBar li a {
+      display: inline;
+    }
+    
+    nav {
+      height: 100px;
+      background-color: rgba(24, 49, 91, 1);
+    
+      padding: 0 50px;
+      text-align: center;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      height: 60px;
+      width: 60px;
+      filter: grayscale(1) invert(1);
+    
+      color: white;
+    }
+    
+    .navBar ul {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .navBar .icon-reorder {
+      cursor: pointer;
+      font-size: 24px;
+      color: #fdfdfd;
+      display: none;
+      
+    }
+    
+    
+    @media screen and (min-width: 450px) {
+      .navBar a {
+        display: none;
+      }
+    
+      .navBar li {
+        display: inline-block;
+      }
+    
+      .navBar ul {
+        display: block !important;
+      }
+    
+      .navBar .icon-reorder {
+        display: none;
+        
+      }
+    }
+    
+    
+    @media screen and (max-width: 449px) {
+      .navBar a {
+        display: block;
+      }
+    
+      .navBar ul {
+        display: none;
+      }
+    
+      .navBar .icon-reorder {
+        display: block;
+      
+      }
+    }
+    
+  
+    .navBar ul.show {
+      display: block !important;
+    }
+    
+
+    .team {
+        flex: 1;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        justify-items: center;
+        padding: 20px;
+    }
+    
+.li-portfolio{
+    background-color: #191a36 !important;
+    border-radius: 10px;
+}
+#portfolio {
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .portfolio-item {
+    background-color: #ececec;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .portfolio-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    max-width: 60%;
+  }
+  
+  .technologies {
+    margin-top: 40px;
+  }
+  
+  .logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .logos img {
+    width: 60px;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .portfolio-content {
+      grid-template-columns: 1fr;
+    }
+    
+    .logos img {
+      width: 40px;
+    }
+  }
+  .portfolio-item:hover {
+    transform: translateY(-10px);
+    transition: transform 0.5s ease;
+}

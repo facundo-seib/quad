@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&family=Tilt+Neon&display=swap");
- @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&family=Tilt+Neon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&family=Tilt+Neon&display=swap");
 
 @property --gradient-angle {
   syntax: "<angle>";
@@ -86,10 +86,10 @@
       font-size: 24px;
       color: #fdfdfd;
       display: none;
-      /* Ocultarlo por defecto */
+      
     }
     
-    /* En resoluciones mayores a 450px */
+    
     @media screen and (min-width: 450px) {
       .navBar a {
         display: none;
@@ -105,11 +105,11 @@
     
       .navBar .icon-reorder {
         display: none;
-        /* Ocultar el ícono en pantallas grandes */
+        
       }
     }
     
-    /* En resoluciones menores a 450px */
+    
     @media screen and (max-width: 449px) {
       .navBar a {
         display: block;
@@ -121,11 +121,11 @@
     
       .navBar .icon-reorder {
         display: block;
-        /* Mostrar el ícono en pantallas pequeñas */
+      
       }
     }
     
-    /* Agregar funcionalidad de toggle */
+  
     .navBar ul.show {
       display: block !important;
     }
