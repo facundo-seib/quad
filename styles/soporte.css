@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&family=Tilt+Neon&display=swap");
+
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* SECTION - HOME */
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&family=Tilt+Neon&display=swap");
+
+.navBar a {
+  color: #fdfdfd;
+  padding: 8px 0;
+  text-decoration: none;
+}
+
+.navBar h1 {
+  color: #fff;
+  font-size: 20px;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.navBar header {
+  background: #222;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.navBar li {
+  color: #fff;
+  list-style: none;
+  padding: 12px;
+}
+
+.navBar li:hover {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.navBar li a {
+  display: inline;
+}
+
+nav {
+  height: 100px;
+  background-color: rgba(24, 49, 91, 1);
+
+  padding: 0 50px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 60px;
+  width: 60px;
+  filter: grayscale(1) invert(1);
+
+  color: white;
+}
+
+.navBar ul {
+  margin: 0;
+  padding: 0;
+}
+
+.navBar .icon-reorder {
+  cursor: pointer;
+  font-size: 24px;
+  color: #fdfdfd;
+  display: none;
+  /* Ocultarlo por defecto */
+}
+
+/* En resoluciones mayores a 450px */
+@media screen and (min-width: 450px) {
+  .navBar a {
+    display: none;
+  }
+
+  .navBar li {
+    display: inline-block;
+  }
+
+  .navBar ul {
+    display: block !important;
+  }
+
+  .navBar .icon-reorder {
+    display: none;
+    /* Ocultar el ícono en pantallas grandes */
+  }
+}
+
+/* En resoluciones menores a 450px */
+@media screen and (max-width: 449px) {
+  .navBar a {
+    display: block;
+  }
+
+  .navBar ul {
+    display: none;
+  }
+
+  .navBar .icon-reorder {
+    display: block;
+    /* Mostrar el ícono en pantallas pequeñas */
+  }
+}
+
+/* Agregar funcionalidad de toggle */
+.navBar ul.show {
+  display: block !important;
+}
+
+.li-soporte {
+  background-color: #191a36;
+  border-radius: 10px;
+}
+
+.content-container {
+  margin: 50px 100px 100px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.round-image {
+  width: 350px;
+  height: 350px;
+  border-radius: 100%;
+}
+
+.small {
+  width: 25%;
+  height: 25%;
+}
+
+.images-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.first-container {
+  margin: 25px 0;
+  padding: 30px;
+  border-radius: 8px;
+  background-color: #ececec;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.second-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #ececec;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+.support-type-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 40px;
+  margin: 30px 0;
+}
+
+@media screen and (max-width: 730px) {
+  .support-type-container {
+    flex-direction: column;
+  }
+  .content-container{
+    margin: 25px;
+  }
+}
+
+.info {
+  width: 80%;
+}
