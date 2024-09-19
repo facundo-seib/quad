@@ -1,0 +1,91 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 700px) {
+    .burger-menu {
+        display: none;
+    }
+  }
+
+.burger-menu {
+    position: relative;
+    padding: 20px;
+}
+
+.burger-icon {
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    cursor: pointer;
+    justify-content: space-between;
+    height: 20px;
+}
+
+.burger-menu:hover{
+    border-radius: 5px;
+    background-color: #191a36;
+}
+
+.burger-icon span {
+    height: 4px;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hidden navigation menu */
+.nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    height: auto;
+}
+
+/* Navigation menu styling */
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    border-bottom: 1px solid #ddd;
+}
+
+.nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+.nav ul li a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Show menu when active */
+.nav.active {
+    display: block;
+}
+
+/* Optional: transition effect for burger icon (on click) */
+.burger-icon.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger-icon.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-icon.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}

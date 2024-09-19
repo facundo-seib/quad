@@ -130,6 +130,12 @@ nav {
   }
 }
 
+@media screen and (max-width: 700px) {
+  .menu {
+    display: none;
+  }
+}
+
 /* Agregar funcionalidad de toggle */
 .navBar ul.show {
   display: block !important;
@@ -182,7 +188,7 @@ nav {
   border-radius: 8px;
   background-color: #ececec;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 40px;
+  padding: 40px;
 }
 .support-type-container {
   display: flex;
@@ -197,7 +203,7 @@ nav {
   .support-type-container {
     flex-direction: column;
   }
-  .content-container{
+  .content-container {
     margin: 25px;
   }
 }
@@ -205,7 +211,6 @@ nav {
 .info {
   width: 80%;
 }
-
 
 .selectable:hover {
   transform: scale(1.07);
