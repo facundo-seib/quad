@@ -56,33 +56,39 @@
       <div class="second-container">
         <h3 style="margin-bottom: 25px">Mantenimiento de Software</h3>
         <div class="images-container">
-          <img
-            class="round-image small"
-            src="./images/support.png"
-            alt="Soporte técnico"
-          />
-
-          <img
-            class="round-image small"
-            src="./images/monitor.png"
-            alt="Monitoreo de sistemas"
-          />
-          <img
-            class="round-image small"
-            src="./images/training.png"
-            alt="Capacitación y formación"
-          />
+          <a href="#support" class="selectable">
+            <img
+              class="round-image"
+              src="./images/support.png"
+              alt="Soporte técnico"
+            />
+          </a>
+          <a href="#monitor" class="selectable">
+            <img
+              class="round-image"
+              src="./images/monitor.png"
+              alt="Monitoreo de sistemas"
+            />
+          </a>
+          <a href="#training" class="selectable">
+            <img
+              class="round-image"
+              src="./images/training.png"
+              alt="Capacitación y formación"
+            />
+          </a>
         </div>
       </div>
-      <div style="display: flex; flex-direction: column; width: 80%;">
+      <div style="display: flex; flex-direction: column; width: 80%">
         <div class="support-type-container">
           <img
+            id="support"
             class="round-image"
             src="./images/support.png"
             alt="Soporte técnico"
           />
           <div>
-            Soporte técnico: Nuestro servicio de soporte técnico está diseñado
+            <b>Soporte técnico:</b> Nuestro servicio de soporte técnico está diseñado
             para ofrecerte soluciones rápidas y efectivas ante cualquier
             incidencia que pueda surgir en el día a día de tu operación
             tecnológica. Ya sea un error inesperado en una aplicación crítica,
@@ -94,11 +100,12 @@
         <div class="support-type-container">
           <img
             class="round-image"
+            id="monitor"
             src="./images/monitor.png"
             alt="Monitoreo de sistemas"
           />
           <div>
-            Monitoreo de Sistemas: El monitoreo continuo de sistemas es esencial
+           <b>Monitoreo de Sistemas:</b>  El monitoreo continuo de sistemas es esencial
             para garantizar que las aplicaciones y la infraestructura
             tecnológica de tu empresa funcionen sin problemas. Nuestro servicio
             de monitoreo proactivo opera las 24 horas del día, los 7 días de la
@@ -112,12 +119,13 @@
         </div>
         <div class="support-type-container">
           <img
+            id="training"
             class="round-image"
             src="./images/training.png"
             alt="Capacitación y formación"
           />
           <div>
-            Entendemos que el éxito de cualquier implementación tecnológica
+            <b>Capacitación y formación: </b>Entendemos que el éxito de cualquier implementación tecnológica
             depende, en gran medida, de que los usuarios finales sepan cómo
             utilizar las herramientas de manera eficiente. Por eso ofrecemos
             servicios de capacitación y formación personalizados para tu equipo.
