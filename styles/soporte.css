@@ -148,8 +148,8 @@ nav {
 }
 
 .round-image {
-  width: 350px;
-  height: 350px;
+  max-width: 350px;
+  max-height: 350px;
   border-radius: 100%;
 }
 
@@ -163,6 +163,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  gap: 30px;
 }
 
 .first-container {
@@ -204,6 +205,7 @@ nav {
 .info {
   width: 80%;
 }
+
 
 .selectable:hover {
   transform: scale(1.07);
